@@ -1,0 +1,14 @@
+.seller_container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: calc(100vh - 80px);
+    display: flex;
+    background-color: #fff;
+}
+.seller_container .outlet_content {
+    width: calc(100% - (600px));
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}

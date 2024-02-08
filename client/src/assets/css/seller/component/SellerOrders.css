@@ -1,0 +1,110 @@
+.s_orders_container {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+}
+.s_product_list_container {
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+}
+
+.s_orders_container .order_wrapper {
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid gray;
+}
+.s_orders_container .order_wrapper .s_order_1st_row {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    height: 210px;
+    border-bottom: 1px dotted gray;
+    padding-bottom: 10px;
+}
+.s_orders_container .order_wrapper .s_order_1st_row .s_order_1st_col {
+    display: grid;
+    grid-template-rows:  repeat(2,auto );
+    width:250px;
+}
+.s_orders_container .order_wrapper .s_order_1st_row .s_order_1st_col .s_order_title {
+    width: 100%;
+}
+.s_orders_container .order_wrapper .s_order_1st_row .s_order_1st_col .s_order_image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.s_orders_container .order_wrapper .s_order_1st_row .s_order_1st_col .s_order_image img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.s_orders_container .order_wrapper .s_order_1st_row .o_1st_row_div {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    border-left: 1px solid gray;
+}
+
+/* 2nd row */
+
+.s_orders_container .order_wrapper  .s_order_2nd_row {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+
+}
+
+.s_orders_container .order_wrapper  .s_order_2nd_row .s_order_2nd_1st_col {
+    border-right: 1px solid gray;
+}
+.s_orders_container .order_wrapper  .s_order_2nd_row .s_order_2nd_1st_col div {
+    display: flex;
+
+    flex-direction: column;
+}
+.s_orders_container .order_wrapper  .s_order_2nd_row .s_order_2nd_2nd_col {
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;    
+    align-items: flex-end;
+    gap: 10px;
+    padding-bottom: 10px;
+} 
+
+.s_orders_container .order_wrapper  .s_order_2nd_row .s_order_2nd_2nd_col button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    letter-spacing: 1.5px;
+}
+
+
+
+/* .s_orders_container .order_wrapper .s_order  .s_order_title {
+    display: flex;
+}
+.s_orders_container .order_wrapper .s_order .s_order_image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.s_orders_container .order_wrapper .s_order .s_order_image img {
+    width: 100%;
+    height: 100%;
+
+} */
+

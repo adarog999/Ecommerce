@@ -1,0 +1,115 @@
+.flash_sale {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 300px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.flash_sale .flash_header {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 50px;
+    border: 1px solid #fff;
+}
+.flash_sale .flash_header  span {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.flash_header .count_down  {
+    display: flex;
+    gap: 10px;
+}
+.flash_header .count_down .timer {
+    display: flex;
+    height: 100%;
+    gap: 5px;
+    align-items: center;
+}
+.flash_header .count_down .timer div {
+    width: 40px;
+    height: 100%;
+    background-color: red;
+    background-image: linear-gradient(to bottom , #4D4D4D ,#000000);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flash_header .count_down .timer div span{
+    color: #fff;
+    font-size: 19px;
+    margin-top: -5px;
+}
+
+.flash_sale .flash_list {
+    background-color: #fff;
+    width: 100%;
+    height: calc(100% - (50px));
+    display: flex;
+    overflow: auto;
+    gap: 15px;
+    scrollbar-width: none;  /* Firefox */
+    transition: all .3s;
+    transform: scale(1);
+
+}
+.flash_sale .flash_list::-webkit-scrollbar {
+    display: none;
+  }
+  .flash_sale .flash_list:hover {
+    cursor: grab;
+    transform: scale(1.05);
+  }
+ 
+.flash_list .flash_items {
+    width: 240px;
+    min-width: 240px;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    color: #fff;
+}
+.flash_list .flash_items .percent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 60px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flash_items .flash_item_image {
+    width: 100%;
+    height: 190px;
+    background-color: orangered;
+}
+.flash_items .flash_item_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.flash_items  .prev_price {
+    display: flex;
+    align-items: center;
+    height: calc(100% - (190px));
+    padding: 5px;
+    gap: 10px;
+}
+.flash_items .prev_price .prev {
+    font-size: 20px;
+    text-decoration: line-through;
+}
+.flash_items .prev_price .pres {
+    font-size: 20px;
+}

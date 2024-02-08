@@ -1,0 +1,226 @@
+
+.nav-bar {
+    /* background-color: #171810; */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    /* box-shadow: 0px 0px 10px 5px black; */
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    border-bottom: 1px solid black;
+    background-color: black;
+    color: #fff;
+}
+.nav-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.nav-wrapper .banner {
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+  /* font-family: 'Nunito', sans-serif; */
+}
+.nav-wrapper ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.nav-wrapper ul a {
+    text-decoration: none;
+    color: #CDCDCD;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+.nav-wrapper ul i {
+    display: none;
+    transition: .3s;
+}
+.nav-wrapper ul i:hover {
+    transform: scale(1.1);
+}
+.nav-wrapper ul .sign {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav-wrapper ul .signUp {
+    background-color: #6200EE;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.nav-wrapper ul .signUp:hover {
+    background-color: #6300ee9d;
+    transform: scale(1.1);
+}
+.nav-wrapper ul .signIn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all .3s;
+    border: 1px solid #fff;
+}
+.nav-wrapper ul .signIn:hover {
+    background-color: #03dac5b4;
+    transform: scale(1.1);
+}
+.menu-container {
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    position: fixed;
+    right: 0px;
+    background-color: #1E1E1E;
+    box-shadow: 0px 0px 10px 5px black;
+    top: 0;
+    z-index: 2;
+    transition: all .3s;
+    transform: translateX(0);
+    animation-duration: .3s;
+    animation-name: none;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    /* animation: menu .3s linear forwards; */
+    padding: 20px;
+    z-index: 10;
+}
+.menu-container .close-menu {
+    font-size: 30px;
+    cursor: pointer;
+    color: #CDCDCD;
+}
+.menu-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0;
+}
+.menu-container ul .links {
+    color: #CDCDCD;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all .3s;
+    text-decoration: none;
+}
+.menu-container ul .links:hover {
+    background-color: #03dac595;
+    color: #fff;
+}
+.menu-container ul .links i {
+    font-size: 25px;
+    width: 40px;
+    color: #fff;
+}
+.menu-container ul .links span {
+    font-size: 20px;
+    font-family: "Poppins",sans-serif;
+    letter-spacing: 1.5px;
+}
+.menu-container ul div a {
+    text-decoration: none;
+    color: #CDCDCD;
+}
+.menu-container ul .sign {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu-container ul .sign a {
+    padding: 10px 20px;
+}
+.menu-container ul .sign .signUp {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    background-color: #6200EE;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .3s;
+}
+.menu-container ul .sign .signUp:hover {
+    background-color: #6300ee84;
+    transform: scale(1.1);
+}
+.menu-container ul .sign .signIn {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .3s;
+}
+.menu-container ul .sign .signIn:hover {
+    background-color: #03dac570;
+    transform: scale(1.1);
+}
+
+.menu-container ul .logout {
+    border-radius: 5px;
+    padding: 5px;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all .3s;
+}
+.menu-container ul .logout:hover {
+    background-color: #03dac570;
+    transform: scale(1.05);
+}
+.menu-container ul .logout span {
+    font-size: 20px;
+}
+.menu_bg {
+    background-color: #1e1e1e99;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+@keyframes menu_open {
+    from {transform: translateX(100%);}
+    to {transform: translateX(0);}
+}
+@keyframes menu_close {
+    from {transform: translateX(0);}
+    to {transform: translateX(100%);}
+}
+@media only screen and (max-width: 980px) {
+    .nav-wrapper ul a {
+        display: none;
+    }
+    .nav-wrapper ul i {
+        display: block;
+        color: #CDCDCD;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav-wrapper .banner {
+        font-size: 20px;
+    }
+}

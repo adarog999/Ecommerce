@@ -1,0 +1,138 @@
+
+.hero-section {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 20px;
+    transition: all .3s;
+}
+.headline {
+    width: 100%;
+    max-width: 700px;
+    padding: 10px;
+    height: max-content;
+    margin-top: -50px;
+}
+.headline .head-txt h1{
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    transition:  all .3s;
+    color: #03FA6E;
+    color: black;
+}
+.headline .head-txt span {
+    font-family: "Open sans",sans-serif;
+    color: #03FA6E;
+    color: black;
+
+}
+.headline-btn  {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.headline-btn  button{
+    padding: 15px 25px;
+    font-family: "Poppins",sans-serif;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.headline-btn .explore-btn {
+    background-color: #03DAC6;
+    border: none;
+    font-weight: 600;
+    transition: all .3s;
+    background-color: black;
+    color: #fff;
+}
+/* .headline-btn .explore-btn:hover {
+    background-color: #03dac595;
+    transform: scale(1.1);
+} */
+.headline-btn  .contact {
+    background-color: #fff;
+    border: none;
+}
+.hero-section .carousel {
+    width: 100%;
+    max-width: 500px;
+    min-width: 500px;
+    height: calc(100vh - 150px);
+    max-height: 550px;
+    background-color: yellow;
+    border-radius: 40px;
+    overflow: hidden;
+    transition: all .3s;
+}
+.hero-section .carousel-inner {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+.hero-section .carousel-inner .carousel-item {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.hero-section .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-section .image-banner {
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero-section .image-wrapper {
+        min-width: 400px;
+        max-height: 450px;
+    } 
+    .headline .head-txt h1{
+        font-size: 40px;
+
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .hero-section {
+        flex-direction: column;        
+        overflow: hidden;
+        position: relative;
+        height: calc(100vh - 80px);
+        padding: 0;
+        gap: 0;
+    }
+    .hero-section .image-wrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        right: 0;
+        transform: translateX(50%);
+        height: calc(100vh - 80px);
+        max-height: 600px;
+        border-radius: 25%;
+    } 
+    .headline .head-txt h1{
+        font-size: 40px;
+        color: #FFFFFF;
+        letter-spacing: 1.5px;
+        transition:  all .3s;
+    }
+    .headline {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+   
+}

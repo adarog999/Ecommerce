@@ -1,0 +1,130 @@
+.home-header {
+    width: 100%;
+    height: 70px;
+    max-width: 1000px;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0 20px;
+    justify-content: flex-end;
+}
+.searchBar {
+    width: calc(100% - (500px));
+    display: flex;
+    height: max-content;
+    position: relative;
+}
+.searchBar input {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 20px;
+    font-size: 17px;
+    background-color: transparent;
+    color: black;
+    letter-spacing: 1.5px;
+    background-color: #fff;
+    font-family: "Poppins",sans-serif;
+}
+.searchBar input:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.757);
+}
+
+.searchBar button {
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: max-content;
+    font-size: 20px;
+    cursor: pointer;
+    color: #03FA6E;
+    color: black;
+}
+.right-head{
+    display: flex;
+    gap: 30px;
+}
+.right-head .cart-order {
+    position: relative;
+}
+.right-head .cart-order i {
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+}
+.right-head .cart-order span {
+    background-color: #D0011B;
+    color: #fff;
+    font-family: "Poppins",sans-serif;
+    position: absolute;
+    right: -10px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 2px    5px;
+    border-radius: 50%;
+    top: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.links .nav-links {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+}
+.links .nav-links a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #fff;
+
+}
+.links .buttons {
+    display: flex;
+ 
+    gap: 20px;
+}
+.links .buttons a {
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 2.5px;
+    border: none;
+    background-color: #fff;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #fff;
+}
+
+.links .settings  {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+}
+.links .settings .np_picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.links .settings i {
+    color: #fff;
+}

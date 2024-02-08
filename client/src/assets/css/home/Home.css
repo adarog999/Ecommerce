@@ -1,0 +1,10 @@
+.home {
+    width: 100%;
+    max-width: 1450px;
+    height: calc(100vh - 80px);
+    margin: 0 auto;
+    z-index: 20;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}

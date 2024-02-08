@@ -1,0 +1,7 @@
+.rating_list_container {
+    width: 100%;
+    max-width: 1300px;
+    height: 200px;
+    margin: 20px auto 0;
+    background-color: black;
+}

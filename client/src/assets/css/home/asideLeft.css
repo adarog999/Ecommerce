@@ -1,0 +1,135 @@
+.aside-left {
+    background-color: blue;
+    height: 100%;
+    border-radius: 5px;
+    width: 300px;
+    overflow: hidden;
+    max-height: 620px;
+}
+.aside-left .head {
+    background-color: black;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.aside-left .head .filterAll {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Work sans",sans-serif;
+    color: #fff;
+} 
+.aside-left .head .filterAll input{
+    padding: 20px;
+}
+.aside-left .head .filterAll span {
+    font-size: 20px;
+    letter-spacing: 2.5px;
+}
+.aside-left .head .minimize i {
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.aside-left .filter_list {
+    height: calc(100% - (195px));
+    background-color: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 60px;
+}
+.filter_list .list-head {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.filter_list .list-head i {
+    font-size: 20px;
+
+}
+.filter_list .list-head span {
+    font-family: "Work sans",sans-serif;
+    letter-spacing: 1.5px;
+}
+.filter_list .choices {
+    padding-left: 20px;
+}
+.filter_list .choices div {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+.filter_list .choices div input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.filter_list .choices div label {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-family: "Poppins",sans-serif;
+}
+
+.add-range {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid gray;
+}
+.add-range p {
+    font-family: "Work sans",sans-serif;
+    letter-spacing: 1.5px;
+    margin: 0;
+    padding-top: 5px;
+}
+.add-range .priceDiv {
+    width: 80%;
+}
+.add-range .priceDiv input {
+    width: 100%;
+    cursor: pointer;
+}
+.add-range .indicator {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    padding-bottom: 5px;
+}
+.apply-btn {
+    background-color: #000000;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(620px - 560px);
+}
+.apply-btn button {
+   padding: 10px  40px;
+   border-radius: 20px;
+   letter-spacing: 2.5px;
+   font-weight: 600;
+   border: none;
+   cursor: pointer;
+   background-color: black;
+   border: 1px solid #fff;
+   color: #fff;
+   transition: all .3s;
+   transform: scale(1);
+}
+.apply-btn button:hover {
+    transform: scale(1.1);
+}
+.apply-btn button:active {
+    background-color: gray;
+   transform: scale(1);
+}

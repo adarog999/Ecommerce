@@ -1,0 +1,22 @@
+.product_container {
+    width: 100%;
+    max-width: 1450px;
+    height: max-content;
+    margin: 0 auto;
+    z-index: 20;
+    gap: 20px;
+    padding: 10px;
+    padding-bottom: 100px;
+}
+
+.search_bar_section {
+    display: flex;
+    gap: 20px;
+}
+.right_ {
+    background-color: blue;
+  
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;
+}

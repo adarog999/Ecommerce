@@ -1,0 +1,42 @@
+.rating_container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.rating_average {
+    background-color: #000000;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    gap: 30px;
+    padding-left: 20px;
+}
+.rating_average  .star {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.rating_average  .star div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+.rating_average  .star div span {
+    font-size: 17px;   
+}
+.rating_average .rating_bar {
+    width: 200px;
+    background-color: #808080;
+    border-radius: 5px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.rating_average .rating_bar .bar {
+    width: 80%;
+    background-color: blue;
+    height: 100%;
+    margin: 0;
+}

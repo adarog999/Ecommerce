@@ -1,0 +1,134 @@
+.signin_container {
+    height: 400px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signin_wrapper {
+    width: 100%;
+    max-width: 600px;
+    height: max-content;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.signin_wrapper h1 {
+    font-family: "Poppins",sans-serif;
+    letter-spacing: 1.5px;
+}
+.signin_form {
+    width: 100%;
+    max-width: 550px;
+    height: 300px;
+    height: max-content;
+    padding: 20px;
+}
+.signin_form .inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-family: "Poppins",sans-serif;
+    position: relative;
+}
+.signin_form .inputs label {
+    display: block;
+    letter-spacing: 1.5px;
+}
+.signin_form .inputs input {
+    height: 40px;
+    outline: none;
+    letter-spacing: 1.5px;
+    padding-left: 10px;
+}
+.signin_form .inputs .showPass , .unShowPass {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.signin_form  button {
+    width: 100%;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    border: 1px solid gray;
+    background-color: transparent;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.signin_form button:hover {
+    transform: scale(1.05);
+}
+.signin_form .forgot_pass {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.social_signin {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.social_signin .image {
+    width: 100px;
+    height: 90px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.social_signin .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dont_have {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    font-family: "Poppins",sans-serif;
+}
+.dont_have span {
+    margin-right: 10px;
+    letter-spacing: 1.5px;
+}
+.dont_have a {
+    letter-spacing: 1.5px;
+}
+
+.signin_container .error {
+    background-color: rgba(255, 0, 0, 0.727);
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.signin_container  .error span {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+.signin_container .error i {
+    cursor: pointer;
+    font-size: 20px;
+}

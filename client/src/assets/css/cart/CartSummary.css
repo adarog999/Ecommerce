@@ -1,0 +1,79 @@
+.cart_detail {
+    height: 100%;
+    border-radius: 5px;
+    width: 350px;
+    overflow: hidden;
+    max-height: 500px;
+    border: 1px solid black;
+    background-color: #fff;
+}
+.cart_detail h1 {
+    font-family: "Poppins",sans-serif;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    padding: 5px;
+    background-color: #000000;
+    color: #fff;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.cart_detail_container {
+    height: calc(100% - (50px));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart_total_detail {
+    padding: 5px;
+}
+.cart_total_detail .voucher {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.cart_total_detail .voucher button {
+    font-family: "Poppins",sans-serif;
+    letter-spacing: 1px;
+    border: 1px solid gray;
+}
+.cart_total_detail .voucher button:hover {
+    background-color: rgba(128, 128, 128, 0.655);
+}
+.cart_total_detail .voucher button:active {
+    background-color: gray;
+}
+.cart_total_detail .div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.cart_total_detail .total_ammount {
+    border-top: 1px dashed black;
+    padding-top: 10px;
+}
+.cart_detail .div span {
+    font-family: "Poppins",sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.checkout_btn_div {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkout_btn_div button {
+    width: 90%;
+    background-color: #000000;
+
+    color: #fff;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    height: 40px;
+    border-radius: 50px;
+}

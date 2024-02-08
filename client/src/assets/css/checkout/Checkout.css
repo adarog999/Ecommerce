@@ -1,0 +1,90 @@
+.checkout_container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(110, 87, 87, 0.857);
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.checkout_container .checkout_form {
+    width: 100%;
+    max-width: 600px;
+    height: calc(100vh - 200px);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+    margin-top: -100px;
+    animation: checkout .3s linear forwards;
+    position: relative;
+}
+@keyframes checkout {
+    from {
+        margin-top: -100px;
+    }
+    to {
+        margin-top: -0;
+    }
+}
+.checkout_form .close_co{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.checkout_form .close_co:hover {
+    transform: scale(1.05);
+}
+.checkout_container .checkout_form .input {
+    display: flex;
+    flex-direction: column;
+}
+.checkout_container .checkout_form .input label {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+}
+.checkout_container .checkout_form .input input {
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+}
+.checkout_container .checkout_form .ta_container {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.checkout_container .checkout_form .ta_container div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkout_container .checkout_form .ta_container div span {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+}
+.checkout_container .checkout_form .place_order_btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.checkout_container .checkout_form .place_order_btn:hover {
+    transform: scale(1.05);
+}
+.checkout_container .checkout_form .place_order_btn:active {
+    transform: scale(1);
+}
